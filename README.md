@@ -54,8 +54,6 @@ https://www.gnu.org/software/bash/manual/bash.html
 
 ## Criação, leitura, edição e remoção de itens 
 
-Certamente, vou adicionar a indicação explícita do sistema operacional para cada comando:
-
 - **Criar diretórios:**
   - Windows
     ```batch
