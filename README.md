@@ -52,7 +52,7 @@ https://www.gnu.org/software/bash/manual/bash.html
 | `robocopy origem destino /e`         | `rsync -a origem/ destino/`               |
 | `attrib +h +s nome_do_arquivo`       | `chmod +h +s nome_do_arquivo`             |
 
-## Criação, leitura, edição e remoção de itens 
+## Diretórios e arquivos
 
 - **Criar diretórios:**
   - Windows
@@ -63,7 +63,15 @@ https://www.gnu.org/software/bash/manual/bash.html
     ```bash
     mkdir diretorio_1 diretorio_2
     ```
-
+- **Navegar em diretórios:**
+  - Windows
+    ```batch
+    cd caminho_do_diretorio
+    ```
+  - Linux
+    ```bash
+    cd caminho_do_diretorio
+    ```
 - **Remover diretório:** 
   - Windows
     ```batch
@@ -113,7 +121,15 @@ https://www.gnu.org/software/bash/manual/bash.html
     ```bash
     cp -r item destino
     ```
-
+- **Copiar recursivamente diretórios:** 
+  - Windows
+    ```batch
+    xcopy /s /e /y origem destino
+    ```
+  - Linux
+    ```bash
+    cp -r origem destino
+    ```
 - **Deletar arquivo:** 
   - Windows
     ```batch
@@ -123,7 +139,6 @@ https://www.gnu.org/software/bash/manual/bash.html
     ```bash
     rm arquivo_1 arquivo_2
     ```
-
 - **Criar arquivos vazios:** 
   - Windows
     ```batch
@@ -133,7 +148,6 @@ https://www.gnu.org/software/bash/manual/bash.html
     ```bash
     touch nota_vazia.txt
     ```
-
 - **Criar arquivos escritos:** 
   - Windows
     ```batch
@@ -143,7 +157,6 @@ https://www.gnu.org/software/bash/manual/bash.html
     ```bash
     echo "oi" > nota.txt
     ```
-
 - **Ler arquivos:** 
   - Windows
     ```batch
@@ -153,4 +166,12 @@ https://www.gnu.org/software/bash/manual/bash.html
     ```bash
     cat nota.txt
     ```
-
+- **Alterar permissões de arquivo:**
+  - Windows
+    ```batch
+    attrib -r "C:\caminho\para\seu\arquivo"
+    ```
+  - Linux
+    ```bash
+    chmod +rw arquivo
+    ```
