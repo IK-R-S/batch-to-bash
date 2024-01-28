@@ -43,10 +43,38 @@
 
 ## Criando, modificando e excluindo: diretórios e arquivos 
 ### Windows 
-- **Criar diretórios:** mkdir diretorio_1 diretorio_2
-- **Remover diretório:** rmdir diretorio_1 diretorio_2
-- **Mover diretórios e arquivos:** move item destino
-- **Deletar arquivo:** del arquivo_1 arquivo_2
-- **Criar arquivos vazios:** type nul > nota_vazia.txt
-- **Criar arquivos escritos:** echo "oi" > nota.txt
-- **Ler arquivos**: type nota.txt
+
+- **Criar diretórios:** 
+  ```batch
+  mkdir diretorio_1 diretorio_2
+  ```
+
+- **Remover diretório:** 
+  ```batch
+  rmdir diretorio_1 diretorio_2
+  ```
+
+- **Mover diretórios e arquivos:** 
+  ```batch
+  move item destino
+  ```
+
+- **Deletar arquivo:** 
+  ```batch
+  del arquivo_1 arquivo_2
+  ```
+
+- **Criar arquivos vazios:** 
+  ```batch
+  type nul > nota_vazia.txt
+  ```
+
+- **Criar arquivos escritos:** 
+  ```batch
+  echo "oi" > nota.txt
+  ```
+
+- **Ler arquivos:** 
+  ```batch
+  type nota.txt
+  ```
