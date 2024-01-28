@@ -92,3 +92,8 @@
   ```batch
   type nota.txt
   ```
+
+### Referências 
+https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+
+https://www.gnu.org/software/bash/manual/bash.html
