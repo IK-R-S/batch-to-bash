@@ -2,6 +2,12 @@
 ![Malware type](https://img.shields.io/badge/batch-windows-cyan)
 ![Malware type](https://img.shields.io/badge/bash-linux-black)
 
+### Referências 
+https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+
+https://www.gnu.org/software/bash/manual/bash.html
+
+
 | **Comando Batch (Windows)**            | **Comando Bash (Linux)**               |
 |--------------------------------------|--------------------------------------------|
 | `dir`                                | `ls`                                       |
@@ -41,59 +47,107 @@
 | `robocopy origem destino /e`         | `rsync -a origem/ destino/`               |
 | `attrib +h +s nome_do_arquivo`       | `chmod +h +s nome_do_arquivo`             |
 
-## Windows // Batch CMD
-### Criação, leitura, edição e remoção de itens 
+## Criação, leitura, edição e remoção de itens 
 
-- **Criar diretórios:** 
-  ```batch
-  mkdir diretorio_1 diretorio_2
-  ```
+Certamente, vou adicionar a indicação explícita do sistema operacional para cada comando:
+
+- **Criar diretórios:**
+  - Windows
+    ```batch
+    mkdir diretorio_1 diretorio_2
+    ```
+  - Linux
+    ```bash
+    mkdir diretorio_1 diretorio_2
+    ```
+
 - **Remover diretório:** 
-  ```batch
-  rmdir diretorio_1 diretorio_2
-  ```
+  - Windows
+    ```batch
+    rmdir diretorio_1 diretorio_2
+    ```
+  - Linux
+    ```bash
+    rm -r diretorio_1 diretorio_2
+    ```
+
 - **Vizualizar diretórios e arquivos:** 
-  ```batch
-  dir item
-  ```
+  - Windows
+    ```batch
+    dir item
+    ```
+  - Linux
+    ```bash
+    ls item
+    ```
+
 - **Filtrar vizualização de diretórios e arquivos:** 
-  ```batch
-   dir | findstr /i ".txt"
-  ```
+  - Windows
+    ```batch
+    dir | findstr /i ".txt"
+    ```
+  - Linux
+    ```bash
+    ls | grep ".txt"
+    ```
+
 - **Mover diretórios e arquivos:** 
-  ```batch
-  move item destino
-  ```
+  - Windows
+    ```batch
+    move item destino
+    ```
+  - Linux
+    ```bash
+    mv item destino
+    ```
+
 - **Copiar diretórios e arquivos:** 
-  ```batch
-  copy item destino
-  ```
-- **Copiar diretórios recursivamente** 
-  ```batch
-  xcopy /s /e /y item destino
-  ```
+  - Windows
+    ```batch
+    copy item destino
+    ```
+  - Linux
+    ```bash
+    cp -r item destino
+    ```
 
 - **Deletar arquivo:** 
-  ```batch
-  del arquivo_1 arquivo_2
-  ```
+  - Windows
+    ```batch
+    del arquivo_1 arquivo_2
+    ```
+  - Linux
+    ```bash
+    rm arquivo_1 arquivo_2
+    ```
 
 - **Criar arquivos vazios:** 
-  ```batch
-  type nul > nota_vazia.txt
-  ```
+  - Windows
+    ```batch
+    type nul > nota_vazia.txt
+    ```
+  - Linux
+    ```bash
+    touch nota_vazia.txt
+    ```
 
 - **Criar arquivos escritos:** 
-  ```batch
-  echo "oi" > nota.txt
-  ```
+  - Windows
+    ```batch
+    echo "oi" > nota.txt
+    ```
+  - Linux
+    ```bash
+    echo "oi" > nota.txt
+    ```
 
 - **Ler arquivos:** 
-  ```batch
-  type nota.txt
-  ```
+  - Windows
+    ```batch
+    type nota.txt
+    ```
+  - Linux
+    ```bash
+    cat nota.txt
+    ```
 
-### Referências 
-https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
-
-https://www.gnu.org/software/bash/manual/bash.html
