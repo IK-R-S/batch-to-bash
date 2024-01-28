@@ -58,9 +58,13 @@
   ```batch
   move item destino
   ```
-  - **Copiar diretórios e arquivos:** 
+- **Copiar diretórios e arquivos:** 
   ```batch
   copy item destino
+  ```
+- **Copiar diretórios recursivamente** 
+  ```batch
+  xcopy /s /e /y item destino
   ```
 
 - **Deletar arquivo:** 
