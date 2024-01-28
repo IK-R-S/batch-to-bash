@@ -41,8 +41,8 @@
 | `robocopy origem destino /e`         | `rsync -a origem/ destino/`               |
 | `attrib +h +s nome_do_arquivo`       | `chmod +h +s nome_do_arquivo`             |
 
-## Criando, modificando e excluindo: diretórios e arquivos 
-### Windows 
+## Windows // Batch CMD
+### Criação, edição e remoção de itens 
 
 - **Criar diretórios:** 
   ```batch
@@ -57,6 +57,10 @@
 - **Mover diretórios e arquivos:** 
   ```batch
   move item destino
+  ```
+  - **Copiar diretórios e arquivos:** 
+  ```batch
+  copy item destino
   ```
 
 - **Deletar arquivo:** 
