@@ -42,18 +42,24 @@
 | `attrib +h +s nome_do_arquivo`       | `chmod +h +s nome_do_arquivo`             |
 
 ## Windows // Batch CMD
-### Criação, edição e remoção de itens 
+### Criação, leitura, edição e remoção de itens 
 
 - **Criar diretórios:** 
   ```batch
   mkdir diretorio_1 diretorio_2
   ```
-
 - **Remover diretório:** 
   ```batch
   rmdir diretorio_1 diretorio_2
   ```
-
+- **Vizualizar diretórios e arquivos:** 
+  ```batch
+  dir item
+  ```
+- **Filtrar vizualização de diretórios e arquivos:** 
+  ```batch
+   dir | findstr /i ".txt"
+  ```
 - **Mover diretórios e arquivos:** 
   ```batch
   move item destino
