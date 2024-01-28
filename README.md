@@ -40,3 +40,13 @@
 | `xcopy /s diretorio_origem destino`  | `cp -r diretorio_origem destino`           |
 | `robocopy origem destino /e`         | `rsync -a origem/ destino/`               |
 | `attrib +h +s nome_do_arquivo`       | `chmod +h +s nome_do_arquivo`             |
+
+## Criando, modificando e excluindo: diretórios e arquivos 
+### Windows 
+- **Criar diretórios:** mkdir diretorio_1 diretorio_2
+- **Remover diretório:** rmdir diretorio_1 diretorio_2
+- **Mover diretórios e arquivos:** move item destino
+- **Deletar arquivo:** del arquivo_1 arquivo_2
+- **Criar arquivos vazios:** type nul > nota_vazia.txt
+- **Criar arquivos escritos:** echo "oi" > nota.txt
+- **Ler arquivos**: type nota.txt
