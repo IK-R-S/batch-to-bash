@@ -187,5 +187,5 @@ https://www.gnu.org/software/bash/manual/bash.html
     ``` 
   - Linux
     ```bash
-    chmod +rw arquivo
+    xdg-open "arquivo ou URL"
     ```
