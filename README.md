@@ -51,6 +51,7 @@ https://www.gnu.org/software/bash/manual/bash.html
 | `xcopy /s diretorio_origem destino`  | `cp -r diretorio_origem destino`           |
 | `robocopy origem destino /e`         | `rsync -a origem/ destino/`               |
 | `attrib +h +s nome_do_arquivo`       | `chmod +h +s nome_do_arquivo`             |
+| `call nome_do_arquivo / Invoke-Item (Pws)`       | `xdg-open nome_do_arquivo`             |
 
 ## Diretórios e arquivos
 
@@ -171,6 +172,19 @@ https://www.gnu.org/software/bash/manual/bash.html
     ```batch
     attrib -r "C:\caminho\para\seu\arquivo"
     ```
+  - Linux
+    ```bash
+    chmod +rw arquivo
+    ```
+- **Abrir um arquivo ou URL com o app padrão do sitema:**
+  - Windows
+    ```batch
+    call "arquivo ou URL"
+    ```
+    Alternativa no PowerShell:
+    ```pws
+    Invoke-Item "arquivo ou URL"
+    ``` 
   - Linux
     ```bash
     chmod +rw arquivo
